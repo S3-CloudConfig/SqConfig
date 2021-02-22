@@ -5,3 +5,9 @@ eureka:
    client:
       serviceUrl:
          defaultZone: http://127.0.0.1:8000/eureka
+zuul:
+   routes:
+      #每个路由都有名字,名字自定
+      sq-user: /user/**
+      sq-music: /music/**
+      sq-index: /**
